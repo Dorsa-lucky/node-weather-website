@@ -1,4 +1,4 @@
-console.log('Clinet side javascript file is loaded')
+
 
 
 // calling fetch in our client side JS is gonna kick off an asynchronous IO operation, much like calling a request in node JS
