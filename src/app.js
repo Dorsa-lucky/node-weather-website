@@ -7,6 +7,7 @@ const forecast = require('./utils/forecast')
 
 //to configure our server by using various methods provided on the application itself
 const app = express()
+const port = process.env.PORT || 3000
 
 
 
@@ -136,6 +137,6 @@ app.get('*', (req, res) => {
 //app.com/weather
 
 //start the server up(common development port), with the web server is not gonna stop unless we stop it
-app.listen(3000, () => {
-    console.log('server is up on port 3500')
+app.listen(port, () => {
+    console.log('server is up on port ' + port)
 })
